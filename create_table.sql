@@ -5,3 +5,8 @@ CREATE TABLE users(
     last_name varchar(20) not null,
     date_of_birth date not null)
 );
+
+CREATE TABLE IF NOT EXISTS vendors(
+    id serial primary key,
+    name varchar not null
+);
