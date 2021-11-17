@@ -34,3 +34,11 @@ create table if not EXISTS stores_products(
     FOREIGN KEY(product_id) REFERENCES products(id)
 );
 
+
+-- inserts
+
+INSERT INTO vendors (name) VALUES
+('one'),
+('two'),
+('three');
+
