@@ -20,3 +20,8 @@ CREATE TABLE IF NOT EXISTS products(
     foreign key(vendor_id) references vendors(id)
 );
 
+
+CREATE table if not EXISTS stores(
+    id serial primary key,
+    name varchar not null
+);
