@@ -19,3 +19,4 @@ CREATE TABLE IF NOT EXISTS products(
     vendor_id integer, 
     foreign key(vendor_id) references vendors(id)
 );
+
