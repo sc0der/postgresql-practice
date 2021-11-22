@@ -50,3 +50,5 @@ insert into products(name, expiration, vendor_id) values
 
 
 SELECT * from vendors where id = '1';
+
+-- functions
