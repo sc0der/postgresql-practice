@@ -71,3 +71,6 @@ select totalVendors();
 SELECT name, id
 FROM vendors
 LIMIT 12;
+
+
+SELECT * FROM vendors LIMIT 3 OFFSET 2;
