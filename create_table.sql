@@ -57,7 +57,7 @@ RETURNS integer AS $total$
 declare
 	total integer;
 BEGIN
-   SELECT count(*) into total FROM Vendors;
+   SELECT count(*) into total FROM vendors;
    RETURN total;
 END;
 $total$ LANGUAGE plpgsql;
