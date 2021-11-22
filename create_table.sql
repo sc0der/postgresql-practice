@@ -61,3 +61,7 @@ BEGIN
    RETURN total;
 END;
 $total$ LANGUAGE plpgsql;
+
+
+-- view FUNCTIONS
+select totalVendors();
