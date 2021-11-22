@@ -65,3 +65,9 @@ $total$ LANGUAGE plpgsql;
 
 -- view FUNCTIONS
 select totalVendors();
+
+
+-- limit
+SELECT name, id
+FROM vendors
+LIMIT 12;
