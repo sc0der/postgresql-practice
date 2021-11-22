@@ -79,3 +79,7 @@ SELECT * FROM vendors LIMIT 3 OFFSET 2;
 -- distinct
 SELECT DISTINCT *
 FROM vendors WHERE name = "one";
+
+
+-- having
+SELECT NAME FROM vendors GROUP BY name HAVING count(name) < 2;
