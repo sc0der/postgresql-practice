@@ -74,3 +74,8 @@ LIMIT 12;
 
 
 SELECT * FROM vendors LIMIT 3 OFFSET 2;
+
+
+-- distinct
+SELECT DISTINCT *
+FROM vendors WHERE name = "one";
