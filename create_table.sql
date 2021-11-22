@@ -52,3 +52,12 @@ insert into products(name, expiration, vendor_id) values
 SELECT * from vendors where id = '1';
 
 -- functions
+CREATE OR REPLACE FUNCTION totalVendors ()
+RETURNS integer AS $total$
+declare
+	total integer;
+BEGIN
+   SELECT count(*) into total FROM Vendors;
+   RETURN total;
+END;
+$total$ LANGUAGE plpgsql;
